@@ -1,0 +1,69 @@
+html{
+	background: #eee;
+}
+body{
+	margin: 50px auto;
+	padding: 50px;
+	max-width: 600px;
+	background: #fff;
+	border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.float-placeholder{
+  border-radius: 3px;
+	border: 1px solid #ccc;
+	position: relative;
+
+	height:50px;
+	line-height: 50px;
+}
+	.float-placeholder-label,
+	.float-placeholder-input{
+		text-indent: 10px;
+		transition: font-size 160ms;
+		transition: line-height 160ms;
+	}
+	.float-placeholder-label{
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		height: inherit;
+		line-height: inherit;
+	}
+	.float-placeholder-input{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+
+		background: transparent;
+		width: 100%;
+		border: 0;
+
+		height: 40px;
+	  line-height: 40px;
+	}
+		.float-placeholder-input::-webkit-input-placeholder{
+			color: transparent;
+		}
+	.float-placeholder-input:focus{
+		outline: 0;
+	}
+
+
+.is-focused{
+   border: 1px solid #006CFF;
+}
+.is-floating .float-placeholder-input{
+	height: 50px;
+	line-height: 50px;
+}
+
+.is-floating + .float-placeholder-label{
+  color: #999;
+	font-size: 11px;
+	line-height: 20px;
+	height: 20px
+}
